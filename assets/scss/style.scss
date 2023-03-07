@@ -94,12 +94,15 @@ header {
         img {
             width: 5%;
             margin-bottom: 13vh;
+            padding-top: 12vh;
         }
     }
 }
 
 .hover:hover {
     background-color: white;
+    opacity: 0.8;
+    color: black;
 
 }
 
