@@ -1,0 +1,465 @@
+@font-face {
+  font-family: "Lora";
+  src: url("../fonts/Lora/Lora-VariableFont-wght.ttf");
+}
+@font-face {
+  font-family: "Worksans";
+  src: url("../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+header {
+  background-color: black;
+  color: #fff;
+}
+header section {
+  text-align: center;
+}
+header section img {
+  width: 40px;
+  height: 24vh;
+  margin-bottom: 40px;
+}
+header section p {
+  font-size: 1.7rem;
+  font-family: "Worksans";
+}
+header section p:nth-of-type(1) {
+  font-size: 1.7rem;
+  font-family: "Worksans";
+  margin-top: 8vh;
+}
+
+header section h1:nth-of-type(2) {
+  color: black;
+  -webkit-text-stroke: 2px #fff;
+  padding-bottom: 10px;
+}
+
+header section h1 {
+  font-size: 10rem;
+}
+
+header div:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12%;
+}
+header div:nth-of-type(1) a {
+  color: white;
+  font-family: "Worksans";
+  font-size: 2rem;
+  text-decoration: none;
+  border: 2px solid #fff;
+  padding: 12px 20px;
+  transition: 1s ease;
+}
+header div:nth-of-type(1) img {
+  width: 5%;
+  margin-bottom: 13vh;
+}
+
+.hover:hover {
+  background-color: white;
+}
+
+header section:nth-of-type(2) {
+  background-color: black;
+}
+header section:nth-of-type(2) h2 {
+  font-size: 11.3rem;
+  color: white;
+  width: 80%;
+  text-align: left;
+  margin-top: 10%;
+}
+header section:nth-of-type(2) article {
+  background-image: url("../img/Lev3_9_Project_css-vertiefung_california-calling-img/map.svg");
+  background-position: right 80%;
+  background-repeat: no-repeat;
+  background-size: 43%;
+  text-align: left;
+  margin-bottom: 10vh;
+  padding-left: 12%;
+}
+header section:nth-of-type(2) article p {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+header section:nth-of-type(2) article h3 {
+  font-size: 8rem;
+  margin-bottom: 10vh;
+}
+
+section:nth-of-type(2) article h3:nth-of-type(3) {
+  padding-bottom: 30vh;
+}
+
+main section img {
+  width: 25%;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 15vh 20vh 45vh 50vh 45vh 30vh;
+  grid-template-areas: "container1 container1 container1 container1" "container2 container3 container3 container4" "container2 container3 container3 container4" "container5 container5 container6 container6" "container7 container8 container8 container8" "container9 container9 container9 container9";
+}
+
+.container1 {
+  grid-area: container1;
+  display: flex;
+  justify-content: right;
+  align-items: start;
+  margin-top: -180px;
+  padding-right: 30vh;
+}
+
+.container2 {
+  grid-area: container2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: -30px;
+  margin-left: 50px;
+}
+
+.container2 img {
+  width: 80%;
+  height: 30%;
+}
+
+.container3 {
+  grid-area: container3;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15vh;
+}
+
+.container3 h2 {
+  font-weight: 700;
+  font-size: 9.5rem;
+}
+
+.text_surrounded_by {
+  font-family: "Worksans";
+  font-size: 1.7rem;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+.container4 {
+  grid-area: container4;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.container4 img {
+  width: 65%;
+  height: 30%;
+}
+
+.container5 {
+  grid-area: container5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container5 img {
+  width: 40%;
+  height: 50%;
+}
+
+.container6 {
+  grid-area: container6;
+  display: flex;
+  align-items: end;
+  padding-left: 100px;
+}
+
+.container6 img {
+  width: 40%;
+  height: 50%;
+}
+
+.container7 {
+  grid-area: container7;
+  display: flex;
+  align-items: center;
+}
+
+.container7 img {
+  width: 70%;
+  height: 45%;
+}
+
+.container8 {
+  grid-area: container8;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  width: 33vw;
+  margin-left: 10vw;
+  margin-top: 50px;
+}
+
+.container8 p {
+  font-size: 1.9rem;
+  font-family: "Worksans";
+  margin-top: 30px;
+  line-height: 45px;
+  font-weight: 600;
+}
+
+.container9 {
+  grid-area: container9;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.container9 img {
+  width: 20%;
+  height: 70%;
+  margin-left: 25%;
+  margin-bottom: -10vh;
+}
+
+.bear_flex {
+  padding-top: 30vh;
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 12%;
+  padding-right: 12%;
+}
+.bear_flex p {
+  font-family: "Worksans";
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding-bottom: 5vh;
+}
+.bear_flex h2 {
+  font-family: "Lora";
+  font-size: 3.7rem;
+  font-weight: 400;
+}
+
+.bear_flex div:nth-of-type(2) {
+  margin-left: 30%;
+  margin-bottom: 2vh;
+}
+.bear_flex div:nth-of-type(2) p {
+  padding-top: 5vh;
+}
+
+section:nth-of-type(2) div:nth-of-type(1) h2 {
+  font-size: 13rem;
+  font-weight: 500;
+  line-height: 95px;
+}
+
+main article {
+  background-color: black;
+  position: relative;
+  height: 65vh;
+}
+
+.bear_pic {
+  width: 25%;
+  height: 80%;
+  margin-top: 17vh;
+  margin-bottom: 7vh;
+  position: absolute;
+  right: 300px;
+  z-index: 1;
+}
+
+.goldenbear {
+  width: 45%;
+  position: absolute;
+  left: 350px;
+}
+
+main section:nth-of-type(3) {
+  background-color: white;
+  color: black;
+}
+
+main article:nth-of-type(2) {
+  postition: absolute;
+  background-color: #fff;
+  margin-top: 50px;
+  margin-bottom: 30vh;
+}
+
+section:nth-of-type(3) div:nth-of-type(1) h2 {
+  font-size: 13rem;
+  font-weight: 500;
+  line-height: 95px;
+}
+
+main section:nth-of-type(3) div:nth-of-type(2) h2 {
+  font-size: 4rem;
+  line-height: 40px;
+  font-weight: 530;
+}
+
+.rosebear {
+  position: absolute;
+  width: 47%;
+  right: 300px;
+  padding-bottom: 10vh;
+}
+
+.blackbear {
+  position: absolute;
+  width: 26%;
+  left: 230px;
+  padding-top: 130px;
+}
+
+.circle {
+  overflow: hidden;
+}
+
+.circle_rotate {
+  margin-left: 80vw;
+  margin-top: -125px;
+  width: 35%;
+  animation: rotation 6s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+footer {
+  background-color: black;
+  height: 90vh;
+  color: white;
+}
+footer div:nth-of-type(1) {
+  background-color: #fff;
+  color: black;
+  transform: rotate(45deg) translateX(870px) translateY(-330px);
+}
+
+.animation_june {
+  position: block;
+  padding: 20px 20px;
+  font-size: 9rem;
+  font-weight: 600;
+  animation-name: move;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(200px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+footer h3 {
+  font-family: "Worksans";
+  padding-left: 12%;
+  font-size: 1.9rem;
+  font-weight: 400;
+  padding-bottom: 20px;
+  padding-top: 5vh;
+}
+footer a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  font-family: "Worksans";
+  margin-left: 12%;
+  padding: 20px 40px;
+  border: 1px solid white;
+  transition: 1s ease;
+}
+
+.icons {
+  margin-left: 12%;
+  margin-top: 10vh;
+}
+
+.icons img {
+  width: 2%;
+}
+
+.icons img:nth-of-type(2) {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.footer_text_p {
+  font-size: 4.6rem;
+  width: 35%;
+  padding-left: 12%;
+  padding-bottom: 5vh;
+  line-height: 50px;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.headline_year {
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
+
+.footer_text_p {
+  font-size: 5rem;
+  width: 60%;
+  padding-left: 12%;
+  line-height: 45px;
+}
+
+.footer_last {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_last h4 {
+  color: white;
+}
+
+.Impressum {
+  color: white;
+}
+
+.footer_logos {
+  width: 30%;
+}
+
+footer figure img:nth-of-type(1) {
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

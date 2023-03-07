@@ -1,0 +1,5 @@
+@mixin figure-style($ta, $fz, $bgc) {
+    text-align: $ta;
+    font-size: $fz;
+    background-color: $bgc;
+}
